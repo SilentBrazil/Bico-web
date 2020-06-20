@@ -8,6 +8,7 @@ export const Container = styled.div`
 
   display: flex;
   align-items: stretch;
+
 `;
 
 export const Content = styled.div`
@@ -56,7 +57,7 @@ export const Content = styled.div`
 
   p {
     position: relative;
-    top: 190px;
+    top: 25px;
     left: -240px;
   }
 `;
@@ -76,9 +77,9 @@ export const FormContainer = styled.div`
   justify-content: center;
 
   h1{
-    position: absolute;
-    left: 715px;
-    top: 121px;
+    position: relative;
+    right: 212px;
+    bottom: 24px;
     font-weight: bold;
     font-size: 38px;
     line-height: 56px;
@@ -88,25 +89,47 @@ export const FormContainer = styled.div`
   form{
     display: flex;
     flex-direction: column;
-    position: absolute;
-    left: 715px;
+    position: relative;
+    right: 28px;
     width: 450px;
-    top: 175px;
+    bottom: 50px;
 
-    input {
-      border: 0;
+    .inputMail {
       margin-top: 55px;
-      padding: 8px;
       width: 100%;
       color: #8B8b8b;
       box-shadow: 0px 1px 0px 0px #000000;
       display: flex;
       align-items: center;
+      height: 60px;
 
-      & + input {
-        margin-top: 45px;
+      input {
+        border: 0;
+
       }
 
+      svg {
+        margin-right: 12px;
+      }
+    }
+
+    .inputPassword {
+      margin-top: 18px;
+      width: 100%;
+      color: #8B8b8b;
+      box-shadow: 0px 1px 0px 0px #000000;
+      display: flex;
+      align-items: center;
+      height: 60px;
+
+      input {
+        border: 0;
+
+      }
+
+      svg {
+        margin-right: 12px;
+      }
     }
     a {
         position: relative;

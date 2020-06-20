@@ -1,4 +1,5 @@
 import React from 'react';
+import { FiMail, FiLock } from 'react-icons/fi';
 
 import logo from '../../assets/logo.svg';
 import icon from '../../assets/google-icon.svg';
@@ -14,8 +15,14 @@ const Login: React.FC = () => (
       <FormContainer>
         <h1>LOGIN</h1>
         <form>
-          <input name='email' placeholder='Email' />
-          <input name='password' placeholder='Senha' type='password'/>
+          <div className="inputMail">
+            <FiMail size={20}/>
+            <input name='email' placeholder='Email'/>
+          </div>
+          <div className="inputPassword">
+            <FiLock size={20}/>
+            <input name='password' placeholder='Senha' type='password'/>
+          </div>
           <a href="forgot">Esqueci a senha</a>
 
           <button type='submit'>LOGIN</button>
